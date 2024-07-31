@@ -1,0 +1,93 @@
+:root{
+    --secondarycol: #2b2b2b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family:"Garamond Classico SC";
+    src: url("/Assets/Garamond\ Classico\ SC.ttf") format("truetype");
+  }
+
+.section1{
+    background-color: black;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logopage{
+    height: 95vh;
+    border: solid 1px;
+    border-color: var(--secondarycol);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.logopage:hover{
+    border-color: white;
+    transition: 4s;
+}
+
+.logopage h1{
+    color: var(--secondarycol);
+    font-size: 10vw;
+    margin: 0;
+    font-family: "Garamond Classico SC";
+    font-weight: normal;
+    transition: 1s;
+    
+}
+.logopage h1:hover{
+    color: white;
+    scale: 1.05;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5vh;
+    border-right: solid 1px var(--secondarycol);
+    border-left: solid 1px var(--secondarycol);
+    border-bottom: solid 1px var(--secondarycol);
+    border-top: solid 1px transparent;
+    transition: 1s;
+}
+footer:hover{
+    border-top: solid 1px white;
+    border-color: white;
+    transition: 4s;
+}
+
+.icons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+a{
+    transition: 1s;
+    scale: 1.5;
+    color: var(--secondarycol);
+}
+a:hover{
+    scale: 1.6;
+    color: white;
+    transform: 2s;
+}
+
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
